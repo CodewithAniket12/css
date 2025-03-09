@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 280px; /* Increased width */
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+        .card img {
+            height: 100px; /* Increased image height */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: darkgreen;
+        }
+            </style>
+</head>
+<body>
+    <div class="card">
+        <img src="img-products/biryani.png"  alt="Product 1">
+        <h3>Chicken Dum Biryani</h3>
+        <p>Price: 200rs</p>
+        <button class="btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="img-products/burger.png" alt="Burger">
+        <h3>Burger Meal</h3>
+        <p>Price: 230rs</p>
+        <button class="btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="img-products/fruits.png" alt="fruits">
+        <h3>Fruits</h3>
+        <p>Price: 120rs</p>
+        <button class="btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="img-products/masala-dosa.png" alt="Dosa">
+        <h3>Masala Dosa</h3>
+        <p>Price: 150rs</p> <!-- Fixed incorrect currency symbol -->
+        <button class="btn">Buy Now</button>
+    </div>
+    <div class="card">
+        <img src="img-products/cheese.png" alt="cheese">
+        <h3>Cheese</h3>
+        <p>Price: 70rs</p>
+        <button class="btn">Buy Now</button>
+    </div>
+    <div>
+        <a href="index.html" class="link-btn">Go Back to Home</a>
+    </div>
+</body>
+</html>
+ 
