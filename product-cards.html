@@ -8,7 +8,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 20px;
+            gap: 20px;
             margin-top: 50px;
             font-family: Arial, sans-serif;
         }
@@ -17,53 +17,71 @@
             border: 2px solid black;
             padding: 20px;
             text-align: center;
-            background-color: #f9f9f9;
-            margin: 10px; /* Manually adding spacing between cards */
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
         }
         .card img {
             height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
         }
+ 
+        .biryani-card { background-color: #FFE5E5; }
+        .burger-card { background-color: #E5F6FF; }
+        .fruits-card { background-color: #E5FFE5; }
+        .dosa-card { background-color: #FFF5E5; }
+        .cheese-card { background-color: #F5E5FF; }
+        .biryani-btn { background-color: #D9534F; }
+        .burger-btn { background-color: #0275D8; }
+        .fruits-btn { background-color: #5CB85C; }
+        .dosa-btn { background-color: #F0AD4E; }
+        .cheese-btn { background-color: #9463C4; }
         .btn {
-            background-color: green;
             color: white;
             padding: 12px;
             border: none;
             cursor: pointer;
             margin-top: 10px;
+            border-radius: 5px;
             font-size: 16px;
         }
+        .biryani-btn:hover { background-color: #C9302C; }
+        .burger-btn:hover { background-color: #0256A3; }
+        .fruits-btn:hover { background-color: #449D44; }
+        .dosa-btn:hover { background-color: #EC971F; }
+        .cheese-btn:hover { background-color: #7B52A3; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="img-products/biryani.png"  alt="Product 1">
+    <div class="card biryani-card">
+        <img src="img-products/biryani.png" alt="Chicken Dum Biryani">
         <h3>Chicken Dum Biryani</h3>
         <p>Price: 200rs</p>
-        <button class="btn">Buy Now</button>
+        <button class="btn biryani-btn">Buy Now</button>
     </div>
-    <div class="card">
+    <div class="card burger-card">
         <img src="img-products/burger.png" alt="Burger">
         <h3>Burger Meal</h3>
         <p>Price: 230rs</p>
-        <button class="btn">Buy Now</button>
+        <button class="btn burger-btn">Buy Now</button>
     </div>
-    <div class="card">
-        <img src="img-products/fruits.png" alt="fruits">
+    <div class="card fruits-card">
+        <img src="img-products/fruits.png" alt="Fruits">
         <h3>Fruits</h3>
         <p>Price: 120rs</p>
-        <button class="btn">Buy Now</button>
+        <button class="btn fruits-btn">Buy Now</button>
     </div>
-    <div class="card">
-        <img src="img-products/masala-dosa.png" alt="Dosa">
+    <div class="card dosa-card">
+        <img src="img-products/masala-dosa.png" alt="Masala Dosa">
         <h3>Masala Dosa</h3>
         <p>Price: 150rs</p>
-        <button class="btn">Buy Now</button>
+        <button class="btn dosa-btn">Buy Now</button>
     </div>
-    <div class="card">
-        <img src="img-products/cheese.png" alt="cheese">
+    <div class="card cheese-card">
+        <img src="img-products/cheese.png" alt="Cheese">
         <h3>Cheese</h3>
         <p>Price: 70rs</p>
-        <button class="btn">Buy Now</button>
+        <button class="btn cheese-btn">Buy Now</button>
     </div>
     <div>
         <a href="index.html" class="link-btn">Go Back to Home</a>
